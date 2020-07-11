@@ -1,0 +1,183 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #d3cdc9;
+    overscroll-behavior: none;
+}
+
+img, div, p {
+    user-select: none;
+}
+
+#map {
+    margin-top: 30px;
+}
+
+#board, #hex_highlights, #counters_highlights {
+    position: absolute;
+    top: 30px;
+    left: 6px;
+    /* background-color: rgba(255, 165, 0, 0.2); */
+}
+
+#turn_info {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+	right: 0px;
+    width: 230px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px 5px 30px 30px;
+    background-color: rgb(0, 0, 0, 0.4);
+    border: 1px solid black;
+    color: white;
+    padding: 5px 20px;
+    font-size: 0.8em;
+}
+
+.menu {
+    position: fixed;
+    z-index: 100;
+    top: 30px;
+    right: 20px;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid black;
+    color: white;
+    font-size: 0.9em;
+    overflow: auto;
+}
+
+.menu_title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu_title img {
+    vertical-align: middle;
+    padding-right: 10px;;
+}
+
+#canvas_step_0, #canvas_step_reinforcement {
+    width: auto;
+    background-color: rgb(255, 255, 255, 0.7);;
+}
+
+.next {
+    margin-top: 10px;
+    text-align: right;
+}
+
+div.next span { 
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+div.next > span {
+    cursor: pointer;
+    margin-top: 10px;;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(255, 0, 0, 0.3);
+    border: 1px solid darkred;
+    padding: 5px 10px;
+}
+
+.next_button {
+    font-size: 2em;
+}
+
+.next_battle_button {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(0, 0, 255, 0.3);
+    padding: 3px 3px;
+}
+
+.table_battle {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_battle tr {
+    height: 40px;
+}
+
+.table_battle img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.cell_attackers, .cell_defender {
+    width: 70px;
+}
+
+.cell_modifiers {
+    width: 80px
+}
+
+.cell_odds {
+    text-align: right;
+    font-size: 1.4em;
+}
+
+.cell_action {
+    text-align: right;
+}
+
+.table_battle_odds {
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 0.8em;
+    margin: 10px 0 5px;
+}
+
+img.die_roll {
+    position: absolute;
+    right: 40px;
+    margin-top: 45px;
+    width: 50px;
+    height: auto;
+}
+
+.table_battle_odds tr {
+    height: auto;
+}
+
+.table_battle_odds td {
+    width: 30px;
+}
+
+.table_battle_odds td {
+    text-align: center;
+}
+
+.explosion {
+    position: absolute;
+    z-index: 50;
+    width: 150px;
+    height: 150px;
+    animation-name: animatedExplosion;
+    animation-duration: 0.6s;
+}
+
+@keyframes animatedExplosion {
+    0%   {background-image: url('e1.png');}
+    15%   {background-image: url('e2.png');}
+    30%   {background-image: url('e3.png');}
+    45%   {background-image: url('e4.png');}
+    60%   {background-image: url('e5.png');}
+    75%   {background-image: url('e6.png');}
+    95%   {background-image: url('e7.png');}
+    100% {background-image: url('e8.png');}
+}
