@@ -25,6 +25,7 @@ img, div, p {
 #splash_title {
     position:absolute; 
     width: 50%; 
+    height: 80%;
     z-index:200; 
     top: 0; 
     left: 0; 
