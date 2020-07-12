@@ -167,17 +167,10 @@ img.die_roll {
     z-index: 50;
     width: 150px;
     height: 150px;
-    animation-name: animatedExplosion;
-    animation-duration: 0.6s;
+    background: url('explosion.png');
+    animation: animatedExplosion 0.6s steps(7);
 }
 
 @keyframes animatedExplosion {
-    0%   {background-image: url('e1.png');}
-    15%   {background-image: url('e2.png');}
-    30%   {background-image: url('e3.png');}
-    45%   {background-image: url('e4.png');}
-    60%   {background-image: url('e5.png');}
-    75%   {background-image: url('e6.png');}
-    95%   {background-image: url('e7.png');}
-    100% {background-image: url('e8.png');}
+    100% {background-position: -1050px;}
 }
