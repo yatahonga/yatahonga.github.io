@@ -2,16 +2,23 @@
 <html>
   <head>
     <title>Battle for Moscow</title>
-    <!--
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
-    -->
-    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no, viewport-fit=cover">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/b4m.css" />
     <script src="js/honeycomb.min.js"></script>
-    <script src="js/b4m.min.js"></script>
+    <script src="js/b4m.js"></script>
   </head>
-  <body>
+  <body style="overflow: hidden;">
+    <!-- Splash screen -->
+    <div id="splash_background" style=""></div>
+    <div id="splash_title">
+      <img src="img/b4m.png" />
+      <div id="next_start">
+        <span id="next_start_button">
+          START 
+        </span>
+      </div>
+    </div>
     <!-- Image assets -->
     <img id="soviets" src="img/soviets.png" style="display: none;">
     <img id="germans" src="img/germans.png" style="display: none;">
