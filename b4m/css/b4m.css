@@ -169,6 +169,7 @@ div.next > span {
 
 .cell_action {
     text-align: right;
+    cursor: pointer;
 }
 
 .table_battle_odds {
