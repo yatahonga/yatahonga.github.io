@@ -25,7 +25,6 @@ img, div, p {
 #splash_title {
     position:absolute; 
     width: 50%; 
-    height: 50%; 
     z-index:200; 
     top: 0; 
     left: 0; 
@@ -36,7 +35,7 @@ img, div, p {
 
 #next_start {
     text-align: center; 
-    margin-top: 60px;
+    margin-top: 30px;
 } 
 
 #next_start_button {
