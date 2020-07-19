@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/b4m.css" />
     <script src="js/honeycomb.min.js"></script>
-    <script src="js/b4m.min.js"></script>
+    <script src="js/b4m.js"></script>
   </head>
   <body style="overflow: hidden;">
     <!-- Splash screen -->
@@ -32,10 +32,13 @@
     <canvas id="board"></canvas>
     <canvas id="counters_highlights"></canvas>
     <!-- Status bar -->
-    <div id="turn_info" style="display: none;"></div>
-    <!-- Menu for the initial German setup phase -->
-    <div id="step_0" class="menu" style="display: none;">
-      <div class="menu_title">
+    <div id="turn_info" style="display: none;">
+      <span id="turn_info_title"></span>
+      <div id="turn_report" style="display: none;"></div>
+    </div>
+    <!-- HUD for the initial German setup phase -->
+    <div id="step_0" class="hud" style="display: none;">
+      <div class="hud_title">
         <img src="img/german_turn.png" />
         <span>Setting Up</span>
       </div>
@@ -50,9 +53,9 @@
         </span>
       </div>
     </div>
-    <!-- Menu for the combat phase -->
-    <div id="step_combat" class="menu" style="display: none;">
-      <div class="menu_title">
+    <!-- HUD for the combat phase -->
+    <div id="step_combat" class="hud" style="display: none;">
+      <div class="hud_title">
         <img src="img/german_turn.png" />
         <span>Combat Phase</span>
       </div>
@@ -75,9 +78,9 @@
         </span>
       </div>
     </div>
-    <!-- Menu for the movement phase -->
-    <div id="step_movement" class="menu" style="display: none;">
-      <div class="menu_title">
+    <!-- HUD for the movement phase -->
+    <div id="step_movement" class="hud" style="display: none;">
+      <div class="hud_title">
         <img src="img/german_turn.png" />
         <span>Movement Phase</span>
       </div>
@@ -99,9 +102,9 @@
         </span>
       </div>
     </div>
-    <!-- Menu for the replacement phase -->
-    <div id="step_replacement" class="menu" style="display: none;">
-      <div class="menu_title">
+    <!-- HUD for the replacement phase -->
+    <div id="step_replacement" class="hud" style="display: none;">
+      <div class="hud_title">
         <img src="img/soviet_turn.png" />
         <span>Replacement Phase</span>
       </div>
@@ -125,9 +128,9 @@
         </span>
       </div>
     </div>
-    <!-- Menu for the special movement phase -->
-    <div id="step_special_movement" class="menu" style="display: none;">
-      <div class="menu_title">
+    <!-- HUD for the special movement phase -->
+    <div id="step_special_movement" class="hud" style="display: none;">
+      <div class="hud_title">
         <img src="img/soviet_turn.png" />
         <span>Special Movement Phase</span>
       </div>
@@ -141,9 +144,9 @@
         </span>
       </div>
     </div>
-    <!-- Main Menu for the final results -->
-    <div id="final_results" class="menu" style="display: none;">
-      <div class="menu_title"></div>
+    <!-- HUD for the final results -->
+    <div id="final_results" class="hud" style="display: none;">
+      <div class="hud_title"></div>
       <p id="final_results_tip"></p>
       <div class="next" onclick="location.href='index.html';">
         <span>

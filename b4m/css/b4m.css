@@ -57,10 +57,10 @@ img, div, p {
     position: absolute;
     top: 30px;
     left: 6px;
-    /* background-color: rgba(255, 165, 0, 0.2); */
 }
 
 #turn_info {
+    cursor: pointer;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -76,7 +76,14 @@ img, div, p {
     font-size: 0.8em;
 }
 
-.menu {
+#turn_report img {
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.hud {
     position: fixed;
     z-index: 100;
     top: 30px;
@@ -91,13 +98,13 @@ img, div, p {
     overflow: auto;
 }
 
-.menu_title {
+.hud_title {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.menu_title img {
+.hud_title img {
     vertical-align: middle;
     padding-right: 10px;;
 }
