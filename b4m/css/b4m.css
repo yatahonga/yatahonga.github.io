@@ -25,7 +25,7 @@ img, div, p {
 #splash_title {
     position:absolute; 
     width: 50%; 
-    height: 80%;
+    height: 90%;
     z-index:200; 
     top: 0; 
     left: 0; 
@@ -37,16 +37,20 @@ img, div, p {
 #next_start {
     text-align: center; 
     margin-top: 30px;
+    color: white;
 } 
 
-#next_start_button {
+#next_solitaire_button, #next_human_vs_computer_button, #next_continue_button {
+    display: inline-block;
     cursor: pointer; 
     border: 1px solid black; 
     border-radius: 10px 10px 10px 10px; 
     color: white;
     background-color: darkred; 
+    margin-top: 20px;
     padding: 10px 20px; 
-    font-size: 1.5em;
+    width: 160px;
+    font-size: 1.1em;
 }
 
 #map {
