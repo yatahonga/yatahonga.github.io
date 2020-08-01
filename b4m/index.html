@@ -64,7 +64,15 @@
         <span>Combat Phase</span>
       </div>
       <p id="step_combat_tip"></p>
+      <p id="skip_combat">
+        <input type="checkbox" id="skip_to_movement" name="skip_to_movement" value="skip">
+        <label for="skip_to_movement"> Go straight to movement phase</label>
+      </p>
       <div id="dashboard_combat"></div>
+      <p id="skip_announce" style="display: none;">
+        <input type="checkbox" id="skip_to_resolution" name="skip_to_resolution" value="skip">
+        <label for="skip_to_resolution"> No more battle to announce</label>
+      </p>
       <div id="next_step_resolve_battles" class="next" style="display: none;">
         <span id="next_step_resolve_battles_button">
           To Battles Resolution 
@@ -73,7 +81,7 @@
           </span>
         </span>
       </div>
-      <div id="next_step_combat" class="next" style="display: block;">
+      <div id="next_step_combat" class="next" style="display: none;">
         <span id="next_step_combat_button" >
           To Movement Phase 
           <span class="next_button">
@@ -88,8 +96,12 @@
         <img src="img/german_turn.png" />
         <span>Movement Phase</span>
       </div>
-      <p id="step_movement_tip">Select and move all necessary units to conclude the turn.</p>
-      <div id="next_step_movement" class="next" style="display: block;">
+      <p id="step_movement_tip">Select all the units you choose to move and their destination in order to conclude the turn.</p>
+      <p id="skip_movement" style="display: none;">
+        <input type="checkbox" id="skip_to_other_player" name="skip_to_other_player" value="skip">
+        <label for="skip_to_other_player"> No more movement required</label>
+      </p>
+      <div id="next_step_movement" class="next" style="display: none;">
         <span id="next_step_movement_button" >
           To Other Player Turn 
           <span class="next_button">
@@ -123,6 +135,10 @@
           </span>
         </span>
       </div>
+      <p id="skip_replacement" style="display: none;">
+        <input type="checkbox" id="skip_to_special_movement" name="skip_to_special_movement" value="skip">
+        <label for="skip_to_special_movement"> No more replacement needed</label>
+      </p>
       <div id="next_step_replacement" class="next" style="display: none;">
         <span id="next_step_replacement_button" >
           To Special Movement Phase 
@@ -139,6 +155,10 @@
         <span>Special Movement Phase</span>
       </div>
       <p id="step_special_movement_tip"></p>
+      <p id="skip_special_movement" style="display: none;">
+        <input type="checkbox" id="skip_to_combat" name="skip_to_combat" value="skip">
+        <label for="skip_to_combat"> No more special movement needed</label>
+      </p>
       <div id="next_step_special_movement" class="next" style="display: none;">
         <span id="next_step_special_movement_button" >
           To Combat Phase 
