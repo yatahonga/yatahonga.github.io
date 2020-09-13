@@ -23,7 +23,7 @@
         <br />
         <div id="next_solitaire_button">New Solitaire Game</div>
         <br />
-        <div id="next_human_vs_computer_button" style="display: none;"><i class="fa fa-user" aria-hidden="true"></i> <img src="img/german_marker.png" style="height: 20px; margin-right: 20px; vertical-align: text-top;"></img> VS <img src="img/soviet_marker.png" style="height: 20px; margin-left: 20px; vertical-align: text-top;"></img> <i class="fa fa-laptop" aria-hidden="true"></i></div>
+        <div id="next_human_vs_computer_button"><img src="img/german_marker.png" style="height: 20px; vertical-align: text-top;"></img> <i class="fa fa-user" style="margin-right: 20px;" aria-hidden="true"></i> vs <i class="fa fa-laptop" style="margin-left: 20px;" aria-hidden="true"></i> <img src="img/soviet_marker.png" style="height: 20px; vertical-align: text-top;"></img></div>
       </div>
     </div>
     <!-- Image assets -->
@@ -99,7 +99,7 @@
         <img src="img/german_turn.png" />
         <span>Movement Phase</span>
       </div>
-      <p id="step_movement_tip">Select all the units you choose to move and their destination in order to conclude the turn.</p>
+      <p id="step_movement_tip"></p>
       <p id="skip_movement" style="display: none;">
         <input type="checkbox" id="skip_to_other_player" name="skip_to_other_player" value="skip">
         <label for="skip_to_other_player"> No more movement required</label>
@@ -175,7 +175,7 @@
     <div id="final_results" class="hud" style="display: none;">
       <div class="hud_title"></div>
       <p id="final_results_tip"></p>
-      <div class="next" onclick="window.location.reload(true);">
+      <div class="next" onclick="newGame();">
         <span>
           New Game 
           <span class="next_button">
