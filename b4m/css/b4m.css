@@ -57,7 +57,7 @@ img, div, p {
     margin-top: 30px;
 }
 
-#board, #hex_highlights, #counters_highlights {
+#board, #hex_highlights, #counters_highlights, #cities_highlights {
     position: absolute;
     top: 30px;
     left: 6px;
@@ -66,6 +66,7 @@ img, div, p {
 #turn_info {
     cursor: pointer;
     position: fixed;
+    z-index: 100;
     top: 0px;
     left: 0px;
 	right: 0px;
@@ -87,11 +88,78 @@ img, div, p {
     vertical-align: middle;
 }
 
+.hud_content {
+    max-width: 1600px; 
+    position: relative;
+}
+
+.hud_container {
+    position: absolute; 
+    margin-right: 20px; 
+    right: 20px; 
+    width: 300px;
+}
+
+#help_menu {
+    position: fixed;
+    z-index: 110;
+    top: 35px;
+    padding-left: 300px;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+#help_content {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    max-width: 880px;
+    height: 80%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid darkgray;
+    color: black;
+    font-size: 0.9em;
+    margin: auto;
+    overflow: scroll;
+}
+
+#help_toc {
+    position: fixed;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid darkgray;
+    padding: 5px 0;
+}
+
+#help_toc a {
+    text-decoration: inherit;
+    font-weight: bold;
+    color: inherit;
+    padding: 0 10px;
+}
+
+.help_section_title {
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.help_img {
+    width: 100%;
+    max-width: 780px;
+}
+
 .hud {
     position: fixed;
     z-index: 100;
     top: 30px;
-    right: 20px;
     width: 300px;
     padding: 10px;
     background-color: rgb(0, 0, 0, 0.4);
