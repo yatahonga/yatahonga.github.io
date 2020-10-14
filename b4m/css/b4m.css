@@ -44,16 +44,16 @@ input[type=checkbox] {
     color: white;
 } 
 
-#next_solitaire_button, #next_human_vs_computer_button, #next_continue_button {
+#next_solitaire_button, #next_human_vs_soviet_button, #next_human_vs_german_button, #next_continue_button {
     display: inline-block;
     cursor: pointer; 
     border: 1px solid black; 
     border-radius: 10px 10px 10px 10px; 
     color: white;
     background-color: darkred; 
-    margin-top: 20px;
+    margin: 20px 20px 0 20px;
     padding: 10px 20px; 
-    width: 180px;
+    width: 170px;
     font-size: 1.1em;
 }
 
