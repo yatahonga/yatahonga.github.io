@@ -118,6 +118,9 @@
             <input type="checkbox" id="skip_to_other_player" name="skip_to_other_player" value="skip">
             <label for="skip_to_other_player"> No more movement required</label>
           </p>
+          <div id="undo_movement" class="next_battle_button" style="display:none;" onclick="restartPhase();">
+            Undo <i class="fa fa-undo" aria-hidden="true"></i>
+          </div>
           <div id="next_step_movement" class="next" style="display: none;">
             <span id="next_step_movement_button" >
               To Other Player Turn 
@@ -156,6 +159,9 @@
             <input type="checkbox" id="skip_to_special_movement" name="skip_to_special_movement" value="skip">
             <label for="skip_to_special_movement"> No more replacement needed</label>
           </p>
+          <div id="undo_replacement" class="next_battle_button" style="display:none;" onclick="restartPhase();">
+            Undo <i class="fa fa-undo" aria-hidden="true"></i>
+          </div>
           <div id="next_step_replacement" class="next" style="display: none;">
             <span id="next_step_replacement_button" >
               To Special Movement Phase 
@@ -176,6 +182,9 @@
             <input type="checkbox" id="skip_to_combat" name="skip_to_combat" value="skip">
             <label for="skip_to_combat"> No more special movement needed</label>
           </p>
+          <div id="undo_special_movement" class="next_battle_button" style="display:none;" onclick="restartPhase();">
+            Undo <i class="fa fa-undo" aria-hidden="true"></i>
+          </div>
           <div id="next_step_special_movement" class="next" style="display: none;">
             <span id="next_step_special_movement_button" >
               To Combat Phase 
