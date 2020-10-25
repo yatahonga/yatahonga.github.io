@@ -147,6 +147,13 @@
           <p id="step_replacement_tip"></p>
           <canvas id="canvas_step_reinforcement" style="display: none;"></canvas>
           <p id="step_replacement_count"></p>
+          <p id="skip_replacement" style="display: none;">
+            <input type="checkbox" id="skip_to_special_movement" name="skip_to_special_movement" value="skip">
+            <label for="skip_to_special_movement"> No more replacement needed</label>
+          </p>
+          <div id="undo_replacement" class="next_battle_button" style="display:none;" onclick="restartPhase();">
+            Undo <i class="fa fa-undo" aria-hidden="true"></i>
+          </div>
           <div id="next_step_reinforcement" class="next" style="display: none;">
             <span id="next_step_reinforcement_button" >
               To Standard Replacement Phase 
@@ -154,13 +161,6 @@
                 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
               </span>
             </span>
-          </div>
-          <p id="skip_replacement" style="display: none;">
-            <input type="checkbox" id="skip_to_special_movement" name="skip_to_special_movement" value="skip">
-            <label for="skip_to_special_movement"> No more replacement needed</label>
-          </p>
-          <div id="undo_replacement" class="next_battle_button" style="display:none;" onclick="restartPhase();">
-            Undo <i class="fa fa-undo" aria-hidden="true"></i>
           </div>
           <div id="next_step_replacement" class="next" style="display: none;">
             <span id="next_step_replacement_button" >
