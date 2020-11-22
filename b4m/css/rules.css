@@ -1,0 +1,63 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 40px;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    body {
+        column-count: 2;
+        column-gap: 40px;
+        column-rule: 1px solid black;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    body {
+        column-count: 3;
+        column-gap: 60px;
+        column-rule: 1px solid black;
+    }
+}
+
+.header_img {
+    filter: invert(100%); 
+    max-width: 500px;
+    width: 100%; 
+}
+
+h1 {
+    color: darkgreen;
+    font-size: 1.3em;
+}
+
+h3 {
+    color: darkgreen;
+    font-size: 1em;
+}
+
+.toc {
+    font-weight: bold;
+    text-decoration: inherit;
+    color: inherit;
+    display: block;
+}
+
+.new_term {
+    color: darkred;
+    font-weight: bold;
+}
+
+.important_information {
+    color: red;
+}
+
+.example {
+    color: blue;
+}
+
+.designer_voice {
+    background-color: lightgray;
+}
