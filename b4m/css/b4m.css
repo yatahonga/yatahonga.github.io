@@ -108,7 +108,7 @@ input[type=checkbox] {
     position: fixed;
     z-index: 110;
     top: 35px;
-    padding-left: 300px;
+    padding-left: 270px;
     color: white;
     font-size: 1.3em;
     cursor: pointer;

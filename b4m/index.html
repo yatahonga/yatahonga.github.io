@@ -10,6 +10,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/b4m.css" />
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
     <script src="js/honeycomb.min.js"></script>
     <script src="js/b4m.min.js"></script>
   </head>
@@ -55,7 +56,10 @@
       <div class="hud_container">
         <!-- Help -->
         <span id="help_menu" style="display: none;">
-          <i class="fa fa-question-circle" aria-hidden="true"></i>
+          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" onclick="TogetherJS(this); return false;">
+            <i id="help_menu_collaborate" class="fa fa-user-plus" aria-hidden="true"></i>
+          </button>          
+          <i id="help_menu_popup" class="fa fa-question-circle" aria-hidden="true"></i>
         </span>
         <!-- HUD for the initial German setup phase -->
         <div id="step_0" class="hud" style="display: none;">
