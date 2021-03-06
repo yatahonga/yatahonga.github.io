@@ -10,14 +10,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/b4m.css" />
-    <script>
-      var TogetherJSConfig_hubBase = "https://togetherjs-hub.glitch.me/";
-      var TogetherJSConfig_toolName = "Collaboration";
-      var TogetherJSConfig_dontShowClicks = true;
-      var TogetherJSConfig_cloneClicks = true;
-      var TogetherJSConfig_disableWebRTC = true;
-    </script>
-    <script src="https://togetherjs.com/togetherjs-min.js"></script>
     <script src="js/honeycomb.min.js"></script>
     <script src="js/b4m.min.js"></script>
   </head>
@@ -29,7 +21,7 @@
       <div id="next_start">
         <img id="rotate" src="img/rotate.gif" style="width: 100px; display: none; margin: auto; margin-bottom: 60px;" />
         <p>
-          "Battle for Moscow" is a game originally designed by Franck Chadwick in 1986 to introduce players to wargaming (<a href="rules.html" target="_blank" style="color: lightgray;">rules</a>). The graphics for this version are based on the 2009 reprint by Victory Point Games. All rights are reserved.<br />
+          "Battle for Moscow" is a game originally designed by Frank Chadwick in 1986 to introduce players to wargaming (<a href="rules.html" target="_blank" style="color: lightgray;">rules</a>). The graphics for this version are based on the 2009 reprint by Victory Point Games. All rights are reserved.<br />
           For any question or feedback, please email <a href="javascript:window.location.href = 'mailto:' + ['olivier','oberlabs.com'].join('@')" target="_blank" style="color: lightgray;">olivier<!---->@<!---->oberlabs.com</a>.
         </p>
         <div id="next_continue_button" style="display: none;">Continue Game</div>
@@ -63,10 +55,7 @@
       <div class="hud_container">
         <!-- Help -->
         <span id="help_menu" style="display: none;">
-          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" onclick="TogetherJS(this); return false;">
-            <i id="help_menu_collaborate" class="fa fa-user-plus" aria-hidden="true"></i>
-          </button>          
-          <i id="help_menu_popup" class="fa fa-question-circle" aria-hidden="true"></i>
+          <i class="fa fa-question-circle" aria-hidden="true"></i>
         </span>
         <!-- HUD for the initial German setup phase -->
         <div id="step_0" class="hud" style="display: none;">
