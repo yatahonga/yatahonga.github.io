@@ -8,7 +8,7 @@
     <meta property="og:image" content="https://storage.googleapis.com/b4m/thumbnail.png">
     <meta property="og:url" content="https://oberlabs.com/b4m/">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/b4m.css" />
     <script src="js/honeycomb.min.js"></script>
     <script src="js/b4m.min.js"></script>
@@ -29,6 +29,9 @@
         <br />
         <div id="next_human_vs_soviet_button"><img src="img/german_marker.png" style="height: 20px; vertical-align: text-top;"></img> <i class="fa fa-user" style="margin-right: 20px;" aria-hidden="true"></i> vs <i class="fa fa-laptop" style="margin-left: 20px;" aria-hidden="true"></i> <img src="img/soviet_marker.png" style="height: 20px; vertical-align: text-top;"></img></div>
         <div id="next_human_vs_german_button"><img src="img/soviet_marker.png" style="height: 20px; vertical-align: text-top;"></img> <i class="fa fa-user" style="margin-right: 20px;" aria-hidden="true"></i> vs <i class="fa fa-laptop" style="margin-left: 20px;" aria-hidden="true"></i> <img src="img/german_marker.png" style="height: 20px; vertical-align: text-top;"></img></div>
+        <p style="margin-top: 30px;">
+          <input type="checkbox" id="tournament_mode" name="tournament_mode" value="tournament_mode">
+          <label for="tournament_mode"> Play with <a href="tournamentrules.html" target="_blank" style="color: lightgray;">Tournament Rules</a></label><br></p>
       </div>
     </div>
     <!-- Image assets -->
@@ -68,6 +71,37 @@
           <div id="next_step_0" class="next" style="display: none;">
             <span id="next_step_0_button">
               To Combat Phase 
+              <span class="next_button">
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+              </span>
+            </span>
+          </div>
+          <div id="next_step_0_tournament" class="next" style="display: none;">
+            <span id="next_step_0_tournament_button">
+              To Russian Redeployment Phase 
+              <span class="next_button">
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+              </span>
+            </span>
+          </div>
+        </div>
+        <!-- HUD for the Russian redeployment phase in tournament mode -->
+        <div id="step_redeployment_tournament" class="hud" style="display: none;">
+          <div class="hud_title">
+            <img src="img/soviet_turn.png" />
+            <span>Redeployment Phase</span>
+          </div>
+          <p id="step_redeployment_tournament_tip"></p>
+          <p id="skip_redeployment_tournament">
+            <input type="checkbox" id="skip_to_combat_after_redeployment" name="skip_to_combat_after_redeployment" value="skip">
+            <label for="skip_to_combat_after_redeployment"> No more redeployment needed</label>
+          </p>
+          <div id="undo_redeployment_tournament" class="next_battle_button" style="display:none;" onclick="restartPhase();">
+            Undo <i class="fa fa-undo" aria-hidden="true"></i>
+          </div>
+          <div id="next_step_redeployment_tournament" class="next" style="display: none;">
+            <span id="next_step_redeployment_tournament_button" >
+              To German Combat Phase 
               <span class="next_button">
                 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
               </span>
